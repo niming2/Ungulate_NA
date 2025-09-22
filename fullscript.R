@@ -244,7 +244,7 @@ site.browsing.total            =  as.matrix(ungulate.matrix.all) %*% herbtrait.c
 browsing.raster.total          =  ungulate.richness;   values(browsing.raster.total)  =  site.browsing.total
 levelplot(browsing.raster.total, margin = FALSE, par.settings = BuRdTheme, scales=list(draw=FALSE))
 
-##now for the native and invasive species separately: 
+##now for the native and alien species separately: 
 #for native species 
 herbtrait.currentnative    = herbtrait_use[rownames(herbtrait_use)%in% names(native.matrix), ]
 nativesite.bodymass   = as.matrix(native.matrix) %*% herbtrait.currentnative$Mass.g
